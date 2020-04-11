@@ -1,11 +1,19 @@
-export const ADD_COMMENT = 'ADD_COMMENT';
+//Campsites
 export const CAMPSITES_LOADING = 'CAMPSITES_LOADING';
 export const CAMPSITES_FAILED = 'CAMPSITES_FAILED';
 export const ADD_CAMPSITES = 'ADD_CAMPSITES';
 
-//These actions are for the json server practice
+//Comments
+export const ADD_COMMENT = 'ADD_COMMENT';
 export const ADD_COMMENTS = 'ADD_COMMENTS';
 export const COMMENTS_FAILED = 'COMMENTS_FAILED';
+
+//Promotions
 export const PROMOTIONS_LOADING = 'PROMOTIONS_LOADING';
 export const ADD_PROMOTIONS = 'ADD_PROMOTIONS';
 export const PROMOTIONS_FAILED = 'PROMOTIONS_FAILED';
+
+//Partners
+export const PARTNERS_LOADING = 'PARTNERS_LOADING';
+export const ADD_PARTNERS = 'PARTNERS_PROMOTIONS';
+export const PARTNERS_FAILED = 'PARTNERS_FAILED';
