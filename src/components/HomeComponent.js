@@ -1,7 +1,8 @@
 import React from "react";
-import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
+import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+import { Transform } from "react-animation-components";
 
 function RenderCard({ item, isLoading, errMess }) {
 
@@ -13,13 +14,15 @@ function RenderCard({ item, isLoading, errMess }) {
     }
 
     return (
-        <Card>
-            <CardImg src={ baseUrl + item.image } alt={item.name} />
-            <CardBody>
-                <CardTitle>{item.name}</CardTitle>
-                <CardText>{item.description}</CardText>
-            </CardBody>
-        </Card>
+        <Transform in enterTransform="rotate(0deg)" exitTransform="rotate(360deg)">
+            <Card>
+                <CardImg src={ baseUrl + item.image } alt={item.name} />
+                <CardBody>
+                    <CardTitle>{item.name}</CardTitle>
+                    <CardText>{item.description}</CardText>
+                </CardBody>
+            </Card>
+        </Transform>
     )
 }
 
